@@ -3,7 +3,7 @@ import TaskList from './TaskList';
 
 export default function DashBoard() {
     return (
-        <div className="p-6 max-w-4xl mx-auto">
+        <div className="p-6 max-w-4xl mx-auto h-screen">
             <h1 className='text-3xl font-bold mb-6'>Bảng quản lý công việc</h1>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
                 <div className="p-4 bg-blue-100 rounded-lg shadow-md">
@@ -19,12 +19,12 @@ export default function DashBoard() {
             <div className=" mb-6">
                 <label className=' block text-gray-700 text-sm font-medium mb-2'>Lọc công việc</label>
                 <select className="p-2 border rounded-md">
-                    <option value="Tất cả"></option>
-                    <option value="Công việc"></option>
-                    <option value="Cá nhân"></option>
-                    <option value="Khẩn cấp"></option>
-                    <option value="Đã hoàn thành"></option>
-                    <option value="Đang chờ"></option>
+                    <option value="Tất cả">Tất cả</option>
+                    <option value="Công việc">Công việc</option>
+                    <option value="Cá nhân">Cá nhân</option>
+                    <option value="Khẩn cấp">Khẩn cấp</option>
+                    <option value="Đã hoàn thành">Đã hoàn thành</option>
+                    <option value="Đang chờ">Đang chờ</option>
                 </select>
             </div>
             <TaskList />
